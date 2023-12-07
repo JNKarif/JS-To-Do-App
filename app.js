@@ -1,2 +1,12 @@
-// https://www.youtube.com/watch?v=G0jO8kUrg-I&list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9&index=2
-// 
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+
+function addTask() {
+  if (inputBox.value === "") {
+    alert("Please add a task!");
+  } else {
+    let list = document.createElement("li");
+    list.innerHTML = inputBox.value;
+    listContainer.appendChild(list);
+  }
+}
