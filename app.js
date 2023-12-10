@@ -39,6 +39,12 @@ listContainer.addEventListener(
   false
 );
 
+/**
+ * to save data in localstorage (keeping data in browser after refresh)
+ * step 1: saveData function creating
+ * step 2: call this function inside all main function
+ * step 3: for displaying this data creat and call showTask() function
+ */
 function saveData() {
   localStorage.setItem("data", listContainer.innerHTML);
 }
@@ -53,13 +59,7 @@ function showTask() {
 
 showTask();
 
-/**
- * searchBox.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    checkWeather(searchBox.value);
-  }
- */
-
+// apply enter click from keyboard
 inputBox.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     addTask(inputBox.value);
