@@ -93,7 +93,7 @@ ul li.checked::before {
   background-image: url(images/checked.png);
 }
 
-ul li cross {
+ul li span {
   position: absolute;
   right: 0;
   top: 5px;
@@ -106,6 +106,6 @@ ul li cross {
   border-radius: 50%;
 }
 
-ul li cross:hover {
+ul li span:hover {
   background: #edeef0;
 }
